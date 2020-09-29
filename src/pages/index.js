@@ -6,7 +6,7 @@ import HomeBanner from '../components/homePage/HomeBanner';
 import HomeContent from '../components/homePage/HomeContent';
 import HomeFeatured from '../components/homePage/HomeFeatured';
 import HomeContact from '../components/homePage/Contact';
-// import SEO from "../components/seo"
+import SEO from '../components/seo';
 
 //Context
 import {
@@ -26,7 +26,7 @@ const IndexPage = (props) => {
 
   return (
     <Layout>
-      {/* <SEO title="home" /> */}
+      <SEO title="home" />
       <HomeBanner onCursor={onCursor} />
       <HomeContent />
       <HomeFeatured onCursor={onCursor} />
