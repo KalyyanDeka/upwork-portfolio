@@ -9,12 +9,14 @@ export const Container = styled(motion.div)`
   width: auto;
   height: 100%;
 
-  @media (max-width: 1408px) {
-    max-width: 1244px;
-  }
-  @media (max-width: 1216px) {
-    max-width: 1152px;
-  }
+  max-width: 1152px;
+
+  // @media (max-width: 1408px) {
+  //   max-width: 1244px;
+  // }
+  // @media (max-width: 1216px) {
+
+  // }
 
   @media (max-width: 1024px) {
     max-width: 960px;
