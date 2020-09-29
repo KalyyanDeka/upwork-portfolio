@@ -1,35 +1,37 @@
-import React from "react"
+import React from 'react';
 
-import { Banner, BannerTitle, Intro, Headline } from "../../styles/homeStyles"
+import { Banner, BannerTitle, Intro, Headline } from '../../styles/homeStyles';
 
-import { Container } from "../../styles/globalStyles"
+import { Container } from '../../styles/globalStyles';
 
 const HomeBanner = ({ onCursor }) => {
   const parent = {
-    initial: { y: 800 },
+    initial: { y: 800, opactiy: 0 },
     animate: {
       y: 0,
+      opactiy: 1,
       transition: {
         staggerChildren: 0.5,
       },
     },
-  }
+  };
 
   const child = {
-    initial: { y: 800 },
+    initial: { y: 800, opactiy: 0 },
     animate: {
       y: 0,
+      opactiy: 1,
       transition: {
         duration: 1,
         ease: [0.6, 0.05, -0.01, 0.9],
       },
     },
-  }
+  };
 
   return (
     <Banner
       id="intro"
-      onMouseEnter={() => onCursor("hovered")}
+      onMouseEnter={() => onCursor('hovered')}
       onMouseLeave={onCursor}
     >
       <Container>
@@ -40,7 +42,7 @@ const HomeBanner = ({ onCursor }) => {
         </BannerTitle>
       </Container>
     </Banner>
-  )
-}
+  );
+};
 
-export default HomeBanner
+export default HomeBanner;
