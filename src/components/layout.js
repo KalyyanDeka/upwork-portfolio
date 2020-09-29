@@ -1,21 +1,21 @@
-import React, { useState } from "react"
-import PropTypes from "prop-types"
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 //styled components
-import { createGlobalStyle, ThemeProvider } from "styled-components"
-import { normalize } from "styled-normalize"
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import { normalize } from 'styled-normalize';
 
 //Components
-import Header from "./header"
-import Cursor from "./customCursor"
-import Navigation from "../components/navigation"
-import Footer from "../components/footer"
+import Header from './header';
+import Cursor from './customCursor';
+import Navigation from '../components/navigation';
+import Footer from '../components/footer';
 
 //Context
 import {
   useGlobalStateContext,
   useGlobalDispatchContext,
-} from "../context/globalContext"
+} from '../context/globalContext';
 
 const GlobalStyle = createGlobalStyle`
   ${normalize}
@@ -33,7 +33,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Open Sans', sans-serif;
-    background: ${props => props.theme.background};
+    background: ${(props) => props.theme.background};
     overscroll-behaviour: none;
     overflow-x: hidden;
     height: 300vh;
@@ -42,43 +42,43 @@ const GlobalStyle = createGlobalStyle`
   ::-webkit-scrollbar {
     width: 0;
   }
-`
+`;
 
 const Layout = ({ children }) => {
   const [hamburgerPosition, setHamburgerPosition] = useState({
     x: 0,
     y: 0,
-  })
+  });
 
   const darkTheme = {
-    background: "#000",
-    text: "#fff",
-    red: "#ea291e",
+    background: '#000',
+    text: '#fff',
+    red: '#ea291e',
     left: `${hamburgerPosition.x}px`,
     top: `${hamburgerPosition.y}px`,
-  }
+  };
 
   const lightTheme = {
-    background: "#fff",
-    text: "#000",
-    red: "#ea291e",
+    background: '#fff',
+    text: '#000',
+    red: '#ea291e',
     left: `${hamburgerPosition.x}px`,
     top: `${hamburgerPosition.y}px`,
-  }
+  };
 
-  const { currentTheme, cursorStyles } = useGlobalStateContext()
-  const dispatch = useGlobalDispatchContext()
+  const { cursorStyles, currentTheme } = useGlobalStateContext();
+  const dispatch = useGlobalDispatchContext();
 
-  const onCursor = cursorType => {
-    cursorType = (cursorStyles.includes(cursorType) && cursorType) || false
+  const onCursor = (cursorType) => {
+    cursorType = (cursorStyles.includes(cursorType) && cursorType) || false;
 
-    dispatch({ type: "CURSOR_TYPE", cursorType: cursorType })
-  }
+    dispatch({ type: 'CURSOR_TYPE', cursorType: cursorType });
+  };
 
-  const [toggleMenu, setToggleMenu] = useState(false)
+  const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <ThemeProvider theme={currentTheme === "dark" ? darkTheme : lightTheme}>
+    <ThemeProvider theme={currentTheme === 'dark' ? darkTheme : lightTheme}>
       <GlobalStyle />
       <Cursor toggleMenu={toggleMenu} />
       <Header
@@ -95,11 +95,11 @@ const Layout = ({ children }) => {
       <main>{children}</main>
       <Footer onCursor={onCursor} />
     </ThemeProvider>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;
