@@ -1,6 +1,6 @@
-import styled, { css } from "styled-components"
+import styled, { css } from 'styled-components';
 
-import { motion } from "framer-motion"
+import { motion } from 'framer-motion';
 
 export const Container = styled(motion.div)`
   flex-grow: 1;
@@ -24,17 +24,17 @@ export const Container = styled(motion.div)`
   }
 
   @media (max-width: 480px) {
-    max-width: 340px;
+    max-width: 330px;
   }
 
-  ${props =>
+  ${(props) =>
     props.fluid &&
     css`
       padding: 0;
       margin: 0;
       max-width: 100%;
     `}
-`
+`;
 
 export const Flex = styled.div`
     position: relative;
@@ -42,7 +42,7 @@ export const Flex = styled.div`
     align-items: center;
     justify-content: space-between;
 
-    ${props =>
+    ${(props) =>
       props.spaceBetween &&
       css`
         justify-content: space-between;
@@ -50,25 +50,25 @@ export const Flex = styled.div`
 
 
 
-    ${props =>
+    ${(props) =>
       props.flexEnd &&
       css`
         justify-content: flex-end;
       `}
 
-    ${props =>
+    ${(props) =>
       props.alignTop &&
       css`
         align-items: flex-start;
       `}
 
-    ${props =>
+    ${(props) =>
       props.noHeight &&
       css`
         height: 0;
       `}
 
-      ${props =>
+      ${(props) =>
         props.footer &&
         css`
           flex-direction: row;
@@ -78,12 +78,12 @@ export const Flex = styled.div`
           }
         `}
 
-`
+`;
 
 export const SectionHeading = styled(motion.h1)`
   font-family: "Roboto Mono", monospace;
   font-size: 2.5rem;
-  color: ${props => props.theme.text};
+  color: ${(props) => props.theme.text};
   margin-bottom: 3.5rem;
 
   // @media (max-width: 480px) {
@@ -94,19 +94,19 @@ export const SectionHeading = styled(motion.h1)`
     font-size: 1.8rem;
   }
 
-  ${props =>
+  ${(props) =>
     props.alignCenter &&
     css`
       text-align: center;
     `}
 
-  ${props =>
+  ${(props) =>
     props.shrinkMargin &&
     css`
       margin-bottom: 2rem;
     `}
 
-    ${props =>
+    ${(props) =>
       props.marginBottom &&
       css`
         margin-bottom: 8rem;
@@ -116,7 +116,7 @@ export const SectionHeading = styled(motion.h1)`
         }
       `}
 
-      ${props =>
+      ${(props) =>
         props.marginLeft &&
         css`
           margin-left: 3rem;
@@ -125,7 +125,7 @@ export const SectionHeading = styled(motion.h1)`
             margin-left: 0;
           }
         `}
-`
+`;
 
 export const Cursor = styled.div`
   position: absolute;
@@ -134,7 +134,7 @@ export const Cursor = styled.div`
   transform: translate(-50%, -50%);
   width: 32px;
   height: 32px;
-  background: ${props => props.theme.red};
+  background: ${(props) => props.theme.red};
   border-radius: 100%;
   transition: all 0s ease-in-out;
   transition-property: width, heightm border;
@@ -150,23 +150,23 @@ export const Cursor = styled.div`
     background: transparent !important;
     width: 56px;
     height: 56px;
-    border: 4px solid ${props => props.theme.red};
+    border: 4px solid ${(props) => props.theme.red};
   }
 
   &.pointer {
-    border: 4px solid ${props => props.theme.text} !important;
+    border: 4px solid ${(props) => props.theme.text} !important;
   }
 
   &.nav-open {
-    background: ${props => props.theme.text};
+    background: ${(props) => props.theme.text};
   }
 
   &.locked {
     background: transparent !important;
     width: 56px;
     height: 56px;
-    border: 4px solid ${props => props.theme.text};
-    top: ${props => props.theme.top} !important;
-    left: ${props => props.theme.left} !important;
+    border: 4px solid ${(props) => props.theme.text};
+    top: ${(props) => props.theme.top} !important;
+    left: ${(props) => props.theme.left} !important;
   }
-`
+`;

@@ -1,10 +1,10 @@
-import styled from "styled-components"
-import { motion } from "framer-motion"
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 //Banner
 
 export const Banner = styled.div`
-  background: ${props => props.theme.background};
+  background: ${(props) => props.theme.background};
   height: 100vh;
   width: 100%;
   positon: relative;
@@ -14,13 +14,13 @@ export const Banner = styled.div`
   @media (max-width: 900px) {
     margin-bottom: 0;
   }
-`
+`;
 
 export const BannerTitle = styled(motion.div)`
   position: absolute;
   bottom: 20px;
   left: 18px;
-  color: ${props => props.theme.text};
+  color: ${(props) => props.theme.text};
   pointer-events: none;
 
   @media (max-width: 900px) {
@@ -32,13 +32,13 @@ export const BannerTitle = styled(motion.div)`
     bottom: 150px;
     left: 0;
   }
-`
+`;
 
 export const Intro = styled(motion.h3)`
   display: block;
   font-size: 2rem;
   margin-left: 0.8rem;
-  color: ${props => props.theme.text};
+  color: ${(props) => props.theme.text};
   font-weight: 300;
 
   @media (max-width: 900px) {
@@ -49,7 +49,7 @@ export const Intro = styled(motion.h3)`
     font-size: 1.5rem;
     margin-left: 0;
   }
-`
+`;
 
 export const Headline = styled(motion.span)`
   display: block;
@@ -65,7 +65,7 @@ export const Headline = styled(motion.span)`
     font-size: 4.5rem;
     margin-bottom: 0.2rem;
   }
-`
+`;
 
 //Content-section
 export const HomeContentSection = styled(motion.div)`
@@ -74,25 +74,29 @@ export const HomeContentSection = styled(motion.div)`
   @media (max-width: 480px) {
     margin-bottom: 100px;
   }
-`
+`;
 
 export const Content = styled.div`
   font-size: 1.3rem;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 200;
   margin-left: 3rem;
-  color: ${props => props.theme.text};
+  color: ${(props) => props.theme.text};
 
   @media (max-width: 480px) {
     font-size: 1.13rem;
     margin-left: 0;
   }
-`
+`;
 
 //Featured-Section
 export const HomeFeaturedSection = styled(motion.div)`
   margin-bottom: 200px;
-`
+
+  @media (max-width: 480px) {
+    margin-bottom: 140px;
+  }
+`;
 export const FeaturedContent = styled(motion.div)`
   height: 480px;
   width: 100%;
@@ -136,29 +140,29 @@ export const FeaturedContent = styled(motion.div)`
         width: 108px;
 
         path {
-          fill: ${props => props.theme.text};
+          fill: ${(props) => props.theme.text};
         }
       }
     }
   }
-`
+`;
 
 //Contact
 
-export const Contact = styled(motion.div)``
+export const Contact = styled(motion.div)``;
 
 export const AboutContent = styled.div`
   width: 90%;
   margin: 0 auto;
   font-size: 1.3rem;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 200;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: ${props => props.theme.text};
+  color: ${(props) => props.theme.text};
 
   @media (max-width: 480px) {
     width: 100%;
@@ -175,10 +179,10 @@ export const AboutContent = styled.div`
   }
 
   button {
-    color: ${props => props.theme.red};
-    background: ${props => props.theme.background};
-    border: 2px solid ${props => props.theme.text};
-    font-family: "Roboto Mono", monospace;
+    color: ${(props) => props.theme.red};
+    background: ${(props) => props.theme.background};
+    border: 2px solid ${(props) => props.theme.text};
+    font-family: 'Roboto Mono', monospace;
     height: 4rem;
     width: 12rem;
     transition: all 0.2s;
@@ -192,4 +196,4 @@ export const AboutContent = styled.div`
       background: rgba(234, 41, 30, 0.2);
     }
   }
-`
+`;
