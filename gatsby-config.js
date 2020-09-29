@@ -11,17 +11,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-catch-links`,
-    // {
-    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
-    //   options: {
-    //     fonts: [
-    //       {
-    //         family: `Roboto Mono`,
-    //         variants: [`300`, `400`, `700`],
-    //       },
-    //     ],
-    //   },
-    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -55,9 +44,5 @@ module.exports = {
         display: `minimal-ui`,
       },
     },
-
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 };

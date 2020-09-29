@@ -86,10 +86,6 @@ export const SectionHeading = styled(motion.h1)`
   color: ${(props) => props.theme.text};
   margin-bottom: 3.5rem;
 
-  // @media (max-width: 480px) {
-  //   font-size: 1.3rem;
-  // }
-
   @media (max-width: 480px) {
     font-size: 1.8rem;
   }
