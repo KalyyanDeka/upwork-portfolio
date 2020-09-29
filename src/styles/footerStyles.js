@@ -1,20 +1,16 @@
-import styled, { css } from "styled-components"
+import styled, { css } from 'styled-components';
 
 export const FooterNav = styled.div`
   height: 100px;
   margin-top: 10rem;
 
-  // @media (max-width: 900px) {
-  //   display: none;
-  // }
-
   @media (max-width: 480px) {
     margin-top: 6rem;
   }
-`
+`;
 
 export const FooterContent = styled.div`
-  color: ${props => props.theme.red};
+  color: ${(props) => props.theme.red};
   font-size: 1.2rem;
   font-weight: 600;
   line-height: 0.5rem;
@@ -30,18 +26,18 @@ export const FooterContent = styled.div`
     }
   }
 
-  ${props =>
+  ${(props) =>
     props.wider &&
     css`
       flex: 2;
     `}
 
-  ${props =>
+  ${(props) =>
     props.alignRight &&
     css`
       text-align: right;
     `}
-`
+`;
 
 export const FooterSocial = styled.div`
   display: flex;
@@ -59,4 +55,4 @@ export const FooterSocial = styled.div`
       height: 100%;
     }
   }
-`
+`;
