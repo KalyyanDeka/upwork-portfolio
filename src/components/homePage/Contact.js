@@ -1,25 +1,25 @@
-import React, { useEffect } from "react"
+import React, { useEffect } from 'react';
 
 //Scroll Behaviour
-import { useInView } from "react-intersection-observer"
-import { useAnimation } from "framer-motion"
+import { useInView } from 'react-intersection-observer';
+import { useAnimation } from 'framer-motion';
 
 //Styled Components
-import { Container, SectionHeading } from "../../styles/globalStyles"
-import { Contact, AboutContent } from "../../styles/homeStyles"
+import { Container, SectionHeading } from '../../styles/globalStyles';
+import { Contact, AboutContent } from '../../styles/homeStyles';
 
 const HomeContact = () => {
-  const animation = useAnimation()
+  const animation = useAnimation();
   const [aboutRef, inView] = useInView({
     triggerOnce: true,
-    rootMargin: "-100px",
-  })
+    rootMargin: '-100px',
+  });
 
   useEffect(() => {
     if (inView) {
-      animation.start("visible")
+      animation.start('visible');
     }
-  }, [animation, inView])
+  }, [animation, inView]);
 
   return (
     <Contact
@@ -45,8 +45,8 @@ const HomeContact = () => {
             Get in Touch!
           </SectionHeading>
           <p>
-            My inbox is always open. Whether for a potential project or just to
-            say hi, feel free to reach out to me!
+            My inbox is always open. Whether for an interesting project or just
+            to say hi, feel free to reach out to me!
           </p>
           <a
             href="mailto:kalyyan.2612@gmail.com"
@@ -60,7 +60,7 @@ const HomeContact = () => {
         </AboutContent>
       </Container>
     </Contact>
-  )
-}
+  );
+};
 
-export default HomeContact
+export default HomeContact;
