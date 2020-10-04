@@ -155,7 +155,7 @@ export const AboutContent = styled.div`
   width: 90%;
   margin: 0 auto;
   font-size: 1.3rem;
-  // font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 200;
   display: flex;
   flex-direction: column;
