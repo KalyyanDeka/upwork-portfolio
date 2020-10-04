@@ -45,8 +45,8 @@ const HomeContact = () => {
             Get in Touch!
           </SectionHeading>
           <p>
-            My inbox is always open. Whether for an interesting project or just
-            to say hi, feel free to reach out to me!
+            My inbox is always open. Whether for a potential project or just to
+            say hi, feel free to reach out to me!
           </p>
           <a
             href="mailto:kalyyan.2612@gmail.com"
