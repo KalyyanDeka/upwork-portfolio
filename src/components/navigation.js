@@ -163,7 +163,7 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
                     </a>
                   </FooterSocial>
                   <FooterContent alignRight>
-                    <p>&copy;2020 Copyright @KalyyanDeka</p>
+                    <p>&copy;2020 Copyright by Kalyyan Deka</p>
                   </FooterContent>
                 </Flex>
               </NavFooter>

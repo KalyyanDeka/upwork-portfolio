@@ -1,11 +1,11 @@
-import React from "react"
+import React from 'react';
 
 //Styles component
-import { Container, Flex } from "../styles/globalStyles"
-import { FooterNav, FooterContent, FooterSocial } from "../styles/footerStyles"
+import { Container, Flex } from '../styles/globalStyles';
+import { FooterNav, FooterContent, FooterSocial } from '../styles/footerStyles';
 
 //Icons
-import { Linkedin, Email, Github } from "../assets/svg/social-icons"
+import { Linkedin, Email, Github } from '../assets/svg/social-icons';
 
 const Footer = ({ onCursor }) => {
   return (
@@ -19,7 +19,7 @@ const Footer = ({ onCursor }) => {
           </FooterContent>
           <FooterSocial>
             <a
-              onMouseEnter={() => onCursor("hovered")}
+              onMouseEnter={() => onCursor('hovered')}
               onMouseLeave={onCursor}
               target="_blank"
               rel="noopener noreferrer"
@@ -28,7 +28,7 @@ const Footer = ({ onCursor }) => {
               <Linkedin />
             </a>
             <a
-              onMouseEnter={() => onCursor("hovered")}
+              onMouseEnter={() => onCursor('hovered')}
               onMouseLeave={onCursor}
               href="mailto:kalyyan.2612@gmail.com"
               target="_blank"
@@ -37,7 +37,7 @@ const Footer = ({ onCursor }) => {
               <Email />
             </a>
             <a
-              onMouseEnter={() => onCursor("hovered")}
+              onMouseEnter={() => onCursor('hovered')}
               onMouseLeave={onCursor}
               target="_blank"
               rel="noopener noreferrer"
@@ -47,12 +47,12 @@ const Footer = ({ onCursor }) => {
             </a>
           </FooterSocial>
           <FooterContent alignRight>
-            <p>&copy;2020 Copyright @KalyyanDeka</p>
+            <p>&copy;2020 Copyright by Kalyyan Deka</p>
           </FooterContent>
         </Flex>
       </Container>
     </FooterNav>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
