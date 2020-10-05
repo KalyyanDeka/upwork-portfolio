@@ -54,6 +54,7 @@ export const Intro = styled(motion.h3)`
 export const Headline = styled(motion.span)`
   display: block;
   font-size: 12rem;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 1000;
   line-height: 0.76;
 
