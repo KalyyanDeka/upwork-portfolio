@@ -45,13 +45,14 @@ const HomeContent = () => {
             I enjoy creating things that live on the internet, whether that be
             websites, applications, or anything in between. My goal is to always
             build products that provide pixel-perfect, performant experiences.
-            <br /> <br /> I love learning new and better ways to create seamless
-            user experiences with clean, efficient, and scalable code. I
-            consider work an ongoing education, and I'm always looking for
-            opportunities to work with those who are willing to share their
-            knowledge as much as I want to learn. At the end of the day, my
-            primary goal is to create something beautiful with people that bring
-            out the best in me.
+            <br />
+            <br />I love learning new and better ways to create seamless user
+            experiences with clean, efficient, and scalable code. I consider
+            work an ongoing education, and I'm always looking for opportunities
+            to work with those who are willing to share their knowledge as much
+            as I want to learn. At the end of the day, my primary goal is to
+            create something beautiful with people that bring out the best in
+            me.
           </p>
         </Content>
       </Container>
