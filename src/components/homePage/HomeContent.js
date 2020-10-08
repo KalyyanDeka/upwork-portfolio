@@ -42,11 +42,10 @@ const HomeContent = () => {
         <Content>
           <SectionHeading id="about">01: About Me</SectionHeading>
           <p>
-            Hello! I'm Kalyyan, a full-stack developer specializing in building
-            (and occasionally designing) things that live on the internet,
-            whether that be websites, applications, or anything in between. My
-            goal is to always build products that provide pixel-perfect,
-            performant experiences.
+            Full-stack developer specializing in building (and occasionally
+            designing) things that live on the internet, whether that be
+            websites, applications, or anything in between. My goal is to always
+            build products that provide pixel-perfect, performant experiences.
             <br /> <br /> I love learning new and better ways to create seamless
             user experiences with clean, efficient, and scalable code. I
             consider work an ongoing education, and I'm always looking for
