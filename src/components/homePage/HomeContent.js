@@ -42,8 +42,7 @@ const HomeContent = () => {
         <Content>
           <SectionHeading id="about">01: About Me</SectionHeading>
           <p>
-            Full-stack developer specializing in building (and occasionally
-            designing) things that live on the internet, whether that be
+            I enjoy creating things that live on the internet, whether that be
             websites, applications, or anything in between. My goal is to always
             build products that provide pixel-perfect, performant experiences.
             <br /> <br /> I love learning new and better ways to create seamless
