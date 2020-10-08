@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-//Banner
+// BANNER STYLES
 
 export const Banner = styled.div`
   background: ${(props) => props.theme.background};
@@ -68,7 +68,7 @@ export const Headline = styled(motion.span)`
   }
 `;
 
-//Content-section
+// CONTENT-SECTION
 export const HomeContentSection = styled(motion.div)`
   margin-bottom: 200px;
 
@@ -90,7 +90,7 @@ export const Content = styled.div`
   }
 `;
 
-//Featured-Section
+// FEATURED-SECTION
 export const HomeFeaturedSection = styled(motion.div)`
   margin-bottom: 200px;
 
@@ -148,7 +148,7 @@ export const FeaturedContent = styled(motion.div)`
   }
 `;
 
-//Contact
+// CONTACT
 
 export const Contact = styled(motion.div)``;
 
