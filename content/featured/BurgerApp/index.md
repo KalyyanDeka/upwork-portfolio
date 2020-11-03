@@ -1,9 +1,9 @@
 ---
-date: "2"
-title: "Burger App"
-cover: "./burgerapp.jpg"
-github: "https://github.com/KalyyanDeka/Burger-Builder"
-external: "https://burger-builder-bykalyyan.netlify.app/"
+date: '3'
+title: 'Burger App'
+cover: './burgerapp.jpg'
+github: 'https://github.com/KalyyanDeka/Burger-Builder'
+external: 'https://burger-builder-bykalyyan.netlify.app/'
 tech:
   - React
   - Redux

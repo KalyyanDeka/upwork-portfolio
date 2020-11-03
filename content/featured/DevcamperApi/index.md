@@ -1,9 +1,9 @@
 ---
-date: "3"
-title: "DevCamper API"
-cover: "./api.png"
-github: "https://github.com/KalyyanDeka/devcamper_api"
-external: "https://documenter.getpostman.com/view/11332625/T1LMhmoy?version=latest"
+date: '4'
+title: 'DevCamper API'
+cover: './api.png'
+github: 'https://github.com/KalyyanDeka/devcamper_api'
+external: 'https://documenter.getpostman.com/view/11332625/T1LMhmoy?version=latest'
 tech:
   - Node
   - Express

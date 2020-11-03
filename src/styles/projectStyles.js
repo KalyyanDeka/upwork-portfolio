@@ -113,7 +113,7 @@ export const StyledProject = styled(motion.div)`
     z-index: 2;
     padding: 25px;
     border-radius: 4px;
-    background: rgba(23, 20, 29, 0.8);
+    background: rgba(23, 20, 29, .9);
     // background: rgba(119, 119, 119, 1);
     color: #ffffff;
     font-size: 18px;

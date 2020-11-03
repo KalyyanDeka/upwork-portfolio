@@ -1,9 +1,9 @@
 ---
-date: "1"
-title: "Smart Brain"
-cover: "./smartbrain.jpg"
-github: "https://github.com/KalyyanDeka/smart-brain"
-external: "https://smartbrain-app.netlify.app/"
+date: '2'
+title: 'Smart Brain'
+cover: './smartbrain.jpg'
+github: 'https://github.com/KalyyanDeka/smart-brain'
+external: 'https://smartbrain-app.netlify.app/'
 tech:
   - React
   - Node
