@@ -9,6 +9,7 @@ tech:
   - Node.js
   - Express
   - MongoDB
+  - Sass
 showInProjects: true
 ---
 
