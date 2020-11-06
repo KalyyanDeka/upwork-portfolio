@@ -134,12 +134,14 @@ const HomeFeatured = () => {
 
                     <div className="project-links">
                       {github && (
-                        <a href={github} aria-label="GitHub Link">
+                        <a href={github} aria-label="GitHub Link" target="_blank"
+                        rel="noopener noreferrer">
                           <GithubProject />
                         </a>
                       )}
                       {external && (
-                        <a href={external} aria-label="External Link">
+                        <a href={external} aria-label="External Link" target="_blank"
+                        rel="noopener noreferrer">
                           <External />
                         </a>
                       )}
@@ -147,7 +149,8 @@ const HomeFeatured = () => {
                   </div>
 
                   <div className="project-image">
-                    <a href={external ? external : github ? github : "#"}>
+                    <a href={external ? external : github ? github : "#"} target="_blank"
+            rel="noopener noreferrer" >
                       <Img
                         fluid={cover.childImageSharp.fluid}
                         alt={title}
