@@ -129,7 +129,7 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
                 <Flex footer spaceBetween>
                   <FooterContent>
                     <span>
-                      <p>kalyyan.2612@gmail.com</p>
+                      <p>kalyyandeka@gmail.com</p>
                     </span>
                   </FooterContent>
 
@@ -139,7 +139,7 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
                       onMouseLeave={onCursor}
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://www.linkedin.com/in/kalyyan-deka-32a3001b2/"
+                      href="https://www.linkedin.com/in/kalyandeka/"
                     >
                       <Linkedin />
                     </a>
@@ -163,7 +163,7 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
                     </a>
                   </FooterSocial>
                   <FooterContent alignRight>
-                    <p>&copy;2020 Copyright by Kalyyan Deka</p>
+                    <p>&copy;2020 Copyright by Kalyan Deka</p>
                   </FooterContent>
                 </Flex>
               </NavFooter>

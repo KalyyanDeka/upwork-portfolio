@@ -49,7 +49,7 @@ const HomeContact = () => {
             say hi, feel free to reach out to me!
           </p>
           <a
-            href="mailto:kalyyan.2612@gmail.com"
+            href="mailto:kalyyandeka@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
