@@ -1,5 +1,5 @@
 ---
-date: '5'
+date: '6'
 title: 'Natours'
 cover: './natours.jpg'
 github: 'https://github.com/KalyyanDeka/natours'
@@ -10,4 +10,4 @@ tech:
 showInProjects: true
 ---
 
-It is a huge landing page which is designed with the newest css properties, animations, advanced responsive design and much more.
+It is a landing page for a travel company which is designed with the newest css properties, animations, advanced responsive design and much more.

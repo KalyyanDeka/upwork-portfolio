@@ -1,5 +1,5 @@
 ---
-date: '2'
+date: '3'
 title: 'Smart Brain'
 cover: './smartbrain.jpg'
 github: 'https://github.com/KalyyanDeka/smart-brain'

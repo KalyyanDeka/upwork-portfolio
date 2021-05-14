@@ -1,5 +1,5 @@
 ---
-date: '3'
+date: '9'
 title: 'Burger App'
 cover: './burgerapp.jpg'
 github: 'https://github.com/KalyyanDeka/Burger-Builder'
@@ -8,7 +8,7 @@ tech:
   - React
   - Redux
   - Firebase
-showInProjects: true
+showInProjects: false
 ---
 
 A burger application build with react where a user can dynamically build a burger, add ingredients to it and then in the end also purchase it.
