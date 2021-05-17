@@ -13,4 +13,4 @@ tech:
 showInProjects: true
 ---
 
-Full-fledged e-commerce application with all the functionality such as full featured shopping cart, product reviews and ratings, product search feature, user profile with orders, admin product and user management, PayPal / credit card integration, etc
+Full-fledged e-commerce platform with all the functionality such as full featured shopping cart, product reviews and ratings, product search feature, user profile with orders, admin product and user management, PayPal / credit card integration, etc
