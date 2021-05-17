@@ -7,4 +7,4 @@ tech:
 showInProjects: true
 ---
 
-Official website of loop health.
+Official website of loop health (a health-tech company).
