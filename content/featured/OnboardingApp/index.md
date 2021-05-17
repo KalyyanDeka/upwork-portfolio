@@ -9,4 +9,4 @@ tech:
 showInProjects: true
 ---
 
-Admin panel for loop health including features like bulk registration of users with validation along with all the crud functionality for managing users and companies associated with loop health.
+Admin panel for loop health (a health-tech company) including features like bulk registration of users with validation along with all the crud functionality for managing users and companies associated with loop health.
