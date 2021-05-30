@@ -1,41 +1,41 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 //Styled components
-import { Container, Flex } from '../styles/globalStyles';
+import { Container, Flex } from "../styles/globalStyles";
 import {
   Nav,
   NavHeader,
   CloseNav,
   NavList,
   NavFooter,
-} from '../styles/navigationStyles';
+} from "../styles/navigationStyles";
 
-import { FooterContent, FooterSocial } from '../styles/footerStyles';
+import { FooterContent, FooterSocial } from "../styles/footerStyles";
 
 //Icons
-import { Linkedin, Email, Github } from '../assets/svg/social-icons';
+import { Linkedin, Email, Github } from "../assets/svg/social-icons";
 
 const navRoutes = [
   {
     id: 0,
-    title: 'Intro',
-    path: '#intro',
+    title: "Intro",
+    path: "#intro",
   },
   {
     id: 1,
-    title: 'About Me',
-    path: '#about',
+    title: "About Me",
+    path: "#about",
   },
   {
     id: 2,
-    title: 'Portfolio',
-    path: '#projects',
+    title: "Portfolio",
+    path: "#projects",
   },
   {
     id: 3,
-    title: 'Contact',
-    path: '#contact',
+    title: "Contact",
+    path: "#contact",
   },
 ];
 
@@ -61,9 +61,9 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
       <AnimatePresence>
         {toggleMenu && (
           <Nav
-            initial={{ x: '-100%' }}
-            exit={{ x: '-100%' }}
-            animate={{ x: toggleMenu ? 0 : '-100%' }}
+            initial={{ x: "-100%" }}
+            exit={{ x: "-100%" }}
+            animate={{ x: toggleMenu ? 0 : "-100%" }}
             transition={{
               duration: tabView ? 0.4 : 0.8,
               ease: [0.6, 0.05, -0.01, 0.9],
@@ -75,7 +75,7 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
                   <h2>Sections</h2>
                   <CloseNav
                     onClick={() => setToggleMenu(!toggleMenu)}
-                    onMouseEnter={() => onCursor('pointer')}
+                    onMouseEnter={() => onCursor("pointer")}
                     onMouseLeave={onCursor}
                   >
                     <button>
@@ -90,7 +90,7 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
                   {navRoutes.map((route) => (
                     <li key={route.id}>
                       <a
-                        onMouseEnter={() => onCursor('pointer')}
+                        onMouseEnter={() => onCursor("pointer")}
                         onMouseLeave={onCursor}
                         onClick={() => setToggleMenu(!toggleMenu)}
                         href={route.path}
@@ -129,41 +129,41 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
                 <Flex footer spaceBetween>
                   <FooterContent>
                     <span>
-                      <p>kalyyandeka@gmail.com</p>
+                      <p>deka.webdev@gmail.com</p>
                     </span>
                   </FooterContent>
 
                   <FooterSocial>
                     <a
-                      onMouseEnter={() => onCursor('pointer')}
+                      onMouseEnter={() => onCursor("pointer")}
                       onMouseLeave={onCursor}
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://www.linkedin.com/in/kalyandeka/"
+                      href="https://www.linkedin.com/in/nitu-deka-12bb42160/"
                     >
                       <Linkedin />
                     </a>
                     <a
-                      onMouseEnter={() => onCursor('pointer')}
+                      onMouseEnter={() => onCursor("pointer")}
                       onMouseLeave={onCursor}
-                      href="mailto:kalyyandeka@gmail.com"
+                      href="mailto:deka.webdev@gmail.com"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <Email />
                     </a>
                     <a
-                      onMouseEnter={() => onCursor('pointer')}
+                      onMouseEnter={() => onCursor("pointer")}
                       onMouseLeave={onCursor}
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://github.com/kalyyandeka"
+                      href="https://github.com/nitudeka"
                     >
                       <Github />
                     </a>
                   </FooterSocial>
                   <FooterContent alignRight>
-                    <p>&copy;2020 Copyright by Kalyan Deka</p>
+                    <p>&copy;2020 Copyright by Nitu Deka</p>
                   </FooterContent>
                 </Flex>
               </NavFooter>

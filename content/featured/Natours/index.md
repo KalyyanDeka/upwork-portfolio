@@ -1,9 +1,9 @@
 ---
-date: '6'
-title: 'Natours'
-cover: './natours.jpg'
-github: 'https://github.com/KalyyanDeka/natours'
-external: 'https://natours-by-kalyyan.netlify.app/'
+date: "8"
+title: "Natours"
+cover: "./natours.jpg"
+github: "https://github.com/nitudeka/natour"
+external: "https://nitudeka.github.io/natour/"
 tech:
   - HTML
   - SASS

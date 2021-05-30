@@ -1,23 +1,23 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
 //Scroll Behaviour
-import { useInView } from 'react-intersection-observer';
-import { useAnimation } from 'framer-motion';
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
 
 //Styled Components
-import { Container, SectionHeading } from '../../styles/globalStyles';
-import { Contact, AboutContent } from '../../styles/homeStyles';
+import { Container, SectionHeading } from "../../styles/globalStyles";
+import { Contact, AboutContent } from "../../styles/homeStyles";
 
 const HomeContact = () => {
   const animation = useAnimation();
   const [aboutRef, inView] = useInView({
     triggerOnce: true,
-    rootMargin: '-100px',
+    rootMargin: "-100px",
   });
 
   useEffect(() => {
     if (inView) {
-      animation.start('visible');
+      animation.start("visible");
     }
   }, [animation, inView]);
 
@@ -49,7 +49,7 @@ const HomeContact = () => {
             say hi, feel free to reach out to me!
           </p>
           <a
-            href="mailto:kalyyandeka@gmail.com"
+            href="mailto:deka.webdev@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >

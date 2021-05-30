@@ -1,23 +1,23 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
 //Scroll Behaviour
-import { useInView } from 'react-intersection-observer';
-import { useAnimation } from 'framer-motion';
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
 
 //Styled Components
-import { Container, SectionHeading } from '../../styles/globalStyles';
-import { HomeContentSection, Content } from '../../styles/homeStyles';
+import { Container, SectionHeading } from "../../styles/globalStyles";
+import { HomeContentSection, Content } from "../../styles/homeStyles";
 
 const HomeContent = () => {
   const animation = useAnimation();
   const [contentRef, inView] = useInView({
     triggerOnce: true,
-    rootMargin: '-100px',
+    rootMargin: "-100px",
   });
 
   useEffect(() => {
     if (inView) {
-      animation.start('visible');
+      animation.start("visible");
     }
   }, [animation, inView]);
 
@@ -42,9 +42,11 @@ const HomeContent = () => {
         <Content>
           <SectionHeading id="about">01: About Me</SectionHeading>
           <p>
-            I enjoy creating things that live on the internet, whether that be
-            websites, applications, or anything in between. My goal is to always
-            build products that provide pixel-perfect, performant experiences.
+            Accomplished full stack developer possessing advanced skills and
+            knowledge of leading programming languages and tools. Expert in
+            devising innovative and tailored solutions, having a strong
+            background in design creation, coding, debugging, and testing, to
+            assist businesses to achieve their goals in a variety of industries.
             <br />
             <br />I love learning new and better ways to create seamless user
             experiences with clean, efficient, and scalable code. I consider

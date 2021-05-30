@@ -37,8 +37,8 @@ const HomeBanner = ({ onCursor }) => {
       <Container>
         <BannerTitle variants={parent} initial="initial" animate="animate">
           <Intro variants={child}>Hi, my name is...</Intro>
-          <Headline variants={child}>KALYYAN</Headline>
-          <Headline variants={child}>DEKA</Headline>
+          <Headline variants={child}>NITU DEKA.</Headline>
+          {/* <Headline variants={child}>DEKA</Headline> */}
         </BannerTitle>
       </Container>
     </Banner>
